@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   // Import the public environment variable
-  import PUBLIC_API_URL from "$env/static/public";
+  import { PUBLIC_API_URL } from "$env/static/public";
 
   interface User {
     id: string;
@@ -15,7 +15,7 @@
   // New variable to hold the form input
   let newUserName: string = "";
   let isSubmitting: boolean = false;
-  const baseUrl = PUBLIC_API_URL || '';
+  const baseUrl = PUBLIC_API_URL || "";
 
   // Fetch users when the page loads
   async function fetchUsers() {
