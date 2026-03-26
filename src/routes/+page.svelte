@@ -15,7 +15,7 @@
   // New variable to hold the form input
   let newUserName: string = "";
   let isSubmitting: boolean = false;
-  const baseUrl = PUBLIC_API_URL || "";
+  const baseUrl = PUBLIC_API_URL || "http://localhost:3000";
 
   // Fetch users when the page loads
   async function fetchUsers() {
